@@ -1,0 +1,896 @@
+[
+  {
+    "id": "fac_rest_001",
+    "name": "Riverine Restaurant",
+    "type": "restaurant",
+    "zone_id": "adventure_land",
+    "tags": [
+      "vietnamese",
+      "family",
+      "kids_menu"
+    ],
+    "kid_friendly": true,
+    "is_open": true,
+    "crowd_level": "medium",
+    "wait_time_min": 15,
+    "distance_map": {
+      "harbor_corner": 520,
+      "folk_culture_island": 340,
+      "river_safari": 430,
+      "adventure_land": 120,
+      "water_world": 260,
+      "indoor_games": 280
+    },
+    "walk_time_map": {
+      "harbor_corner": 8,
+      "folk_culture_island": 5,
+      "river_safari": 6,
+      "adventure_land": 2,
+      "water_world": 4,
+      "indoor_games": 4
+    },
+    "amenities": [
+      "kids_menu",
+      "high_chair",
+      "indoor_seating"
+    ],
+    "description": "Nhà hàng gia đình gần khu Vùng Đất Phiêu Lưu, phù hợp nhóm có trẻ em.",
+    "lat": 15.788222656362159,
+    "lng": 108.41128974411366
+  },
+  {
+    "id": "fac_rest_002",
+    "name": "Cocoon Restaurant",
+    "type": "restaurant",
+    "zone_id": "indoor_games",
+    "tags": [
+      "vegetarian",
+      "buffet",
+      "international"
+    ],
+    "kid_friendly": true,
+    "is_open": true,
+    "crowd_level": "low",
+    "wait_time_min": 10,
+    "distance_map": {
+      "harbor_corner": 680,
+      "folk_culture_island": 980,
+      "river_safari": 1040,
+      "adventure_land": 460,
+      "water_world": 860,
+      "indoor_games": 90
+    },
+    "walk_time_map": {
+      "harbor_corner": 10,
+      "folk_culture_island": 14,
+      "river_safari": 15,
+      "adventure_land": 7,
+      "water_world": 12,
+      "indoor_games": 2
+    },
+    "amenities": [
+      "vegetarian_menu",
+      "buffet",
+      "air_conditioning"
+    ],
+    "description": "Nhà hàng buffet có lựa chọn món chay trong khu Indoor Games.",
+    "lat": 15.787982167160775,
+    "lng": 108.41073208465507
+  },
+  {
+    "id": "fac_rest_003",
+    "name": "Deliland Restaurant",
+    "type": "restaurant",
+    "zone_id": "harbor_corner",
+    "tags": [
+      "buffet",
+      "international",
+      "family"
+    ],
+    "kid_friendly": true,
+    "is_open": true,
+    "crowd_level": "high",
+    "wait_time_min": 18,
+    "distance_map": {
+      "harbor_corner": 140,
+      "folk_culture_island": 460,
+      "river_safari": 540,
+      "adventure_land": 800,
+      "water_world": 390,
+      "indoor_games": 360
+    },
+    "walk_time_map": {
+      "harbor_corner": 2,
+      "folk_culture_island": 7,
+      "river_safari": 8,
+      "adventure_land": 12,
+      "water_world": 6,
+      "indoor_games": 5
+    },
+    "amenities": [
+      "buffet",
+      "group_seating",
+      "indoor_seating"
+    ],
+    "description": "Nhà hàng buffet gần khu thuyền lớn tại Harbor Corner.",
+    "lat": 15.787197870275882,
+    "lng": 108.4087401515442
+  },
+  {
+    "id": "fac_rest_004",
+    "name": "Cho Que Restaurant",
+    "type": "restaurant",
+    "zone_id": "folk_culture_island",
+    "tags": [
+      "vietnamese",
+      "local",
+      "traditional"
+    ],
+    "kid_friendly": true,
+    "is_open": true,
+    "crowd_level": "medium",
+    "wait_time_min": 12,
+    "distance_map": {
+      "harbor_corner": 410,
+      "folk_culture_island": 100,
+      "river_safari": 280,
+      "adventure_land": 890,
+      "water_world": 740,
+      "indoor_games": 930
+    },
+    "walk_time_map": {
+      "harbor_corner": 6,
+      "folk_culture_island": 2,
+      "river_safari": 4,
+      "adventure_land": 13,
+      "water_world": 11,
+      "indoor_games": 14
+    },
+    "amenities": [
+      "local_food",
+      "covered_seating"
+    ],
+    "description": "Nhà hàng món Việt trong khu Island of Folk Culture.",
+    "lat": 15.789344020658428,
+    "lng": 108.4140574588308
+  },
+  {
+    "id": "fac_rest_005",
+    "name": "Chingu BBQ",
+    "type": "restaurant",
+    "zone_id": "indoor_games",
+    "tags": [
+      "korean",
+      "bbq"
+    ],
+    "kid_friendly": false,
+    "is_open": true,
+    "crowd_level": "medium",
+    "wait_time_min": 14,
+    "distance_map": {
+      "harbor_corner": 620,
+      "folk_culture_island": 940,
+      "river_safari": 1010,
+      "adventure_land": 430,
+      "water_world": 820,
+      "indoor_games": 80
+    },
+    "walk_time_map": {
+      "harbor_corner": 9,
+      "folk_culture_island": 14,
+      "river_safari": 15,
+      "adventure_land": 6,
+      "water_world": 12,
+      "indoor_games": 1
+    },
+    "amenities": [
+      "grill_table",
+      "indoor_seating"
+    ],
+    "description": "Nhà hàng BBQ Hàn Quốc trong khối Indoor Games.",
+    "lat": 15.787982167160775,
+    "lng": 108.41073208465507
+  },
+  {
+    "id": "fac_rest_006",
+    "name": "An Restaurant",
+    "type": "restaurant",
+    "zone_id": "harbor_corner",
+    "tags": [
+      "italian",
+      "vietnamese",
+      "family"
+    ],
+    "kid_friendly": true,
+    "is_open": true,
+    "crowd_level": "medium",
+    "wait_time_min": 16,
+    "distance_map": {
+      "harbor_corner": 180,
+      "folk_culture_island": 500,
+      "river_safari": 570,
+      "adventure_land": 820,
+      "water_world": 420,
+      "indoor_games": 380
+    },
+    "walk_time_map": {
+      "harbor_corner": 3,
+      "folk_culture_island": 7,
+      "river_safari": 9,
+      "adventure_land": 12,
+      "water_world": 6,
+      "indoor_games": 6
+    },
+    "amenities": [
+      "family_table",
+      "indoor_seating"
+    ],
+    "description": "Nhà hàng gọi món tại khu Harbor Corner với thực đơn Việt và Âu.",
+    "lat": 15.786111093996086,
+    "lng": 108.40879196937651
+  },
+  {
+    "id": "fac_rest_007",
+    "name": "Little Tokyo",
+    "type": "restaurant",
+    "zone_id": "indoor_games",
+    "tags": [
+      "japanese",
+      "bento"
+    ],
+    "kid_friendly": true,
+    "is_open": true,
+    "crowd_level": "low",
+    "wait_time_min": 9,
+    "distance_map": {
+      "harbor_corner": 700,
+      "folk_culture_island": 990,
+      "river_safari": 1060,
+      "adventure_land": 470,
+      "water_world": 900,
+      "indoor_games": 110
+    },
+    "walk_time_map": {
+      "harbor_corner": 10,
+      "folk_culture_island": 14,
+      "river_safari": 15,
+      "adventure_land": 7,
+      "water_world": 13,
+      "indoor_games": 2
+    },
+    "amenities": [
+      "air_conditioning",
+      "takeaway"
+    ],
+    "description": "Quầy món Nhật trong khu Indoor Games.",
+    "lat": 15.787982167160775,
+    "lng": 108.41073208465507
+  },
+  {
+    "id": "fac_rest_008",
+    "name": "Yummy Land",
+    "type": "restaurant",
+    "zone_id": "water_world",
+    "tags": [
+      "fast_food",
+      "asian",
+      "european"
+    ],
+    "kid_friendly": true,
+    "is_open": true,
+    "crowd_level": "medium",
+    "wait_time_min": 7,
+    "distance_map": {
+      "harbor_corner": 290,
+      "folk_culture_island": 650,
+      "river_safari": 700,
+      "adventure_land": 340,
+      "water_world": 60,
+      "indoor_games": 760
+    },
+    "walk_time_map": {
+      "harbor_corner": 4,
+      "folk_culture_island": 10,
+      "river_safari": 11,
+      "adventure_land": 5,
+      "water_world": 1,
+      "indoor_games": 11
+    },
+    "amenities": [
+      "kids_combo",
+      "takeaway"
+    ],
+    "description": "Khu đồ ăn nhanh tại Thế Giới Nước, hợp gia đình và trẻ em.",
+    "lat": 15.788204,
+    "lng": 108.407826
+  },
+  {
+    "id": "fac_rest_009",
+    "name": "3S Food & Drink",
+    "type": "restaurant",
+    "zone_id": "adventure_land",
+    "tags": [
+      "fast_food",
+      "snack"
+    ],
+    "kid_friendly": true,
+    "is_open": true,
+    "crowd_level": "medium",
+    "wait_time_min": 8,
+    "distance_map": {
+      "harbor_corner": 760,
+      "folk_culture_island": 920,
+      "river_safari": 780,
+      "adventure_land": 90,
+      "water_world": 440,
+      "indoor_games": 430
+    },
+    "walk_time_map": {
+      "harbor_corner": 11,
+      "folk_culture_island": 13,
+      "river_safari": 11,
+      "adventure_land": 2,
+      "water_world": 6,
+      "indoor_games": 6
+    },
+    "amenities": [
+      "takeaway",
+      "cold_drink"
+    ],
+    "description": "Quầy đồ ăn nhanh gần khu trò chơi Adventure Land.",
+    "lat": 15.785879693610086,
+    "lng": 108.40922442027532
+  },
+  {
+    "id": "fac_rest_010",
+    "name": "D'Art Chocolate",
+    "type": "restaurant",
+    "zone_id": "harbor_corner",
+    "tags": [
+      "dessert",
+      "chocolate",
+      "snack"
+    ],
+    "kid_friendly": true,
+    "is_open": true,
+    "crowd_level": "low",
+    "wait_time_min": 5,
+    "distance_map": {
+      "harbor_corner": 160,
+      "folk_culture_island": 470,
+      "river_safari": 560,
+      "adventure_land": 810,
+      "water_world": 410,
+      "indoor_games": 370
+    },
+    "walk_time_map": {
+      "harbor_corner": 3,
+      "folk_culture_island": 7,
+      "river_safari": 9,
+      "adventure_land": 12,
+      "water_world": 6,
+      "indoor_games": 5
+    },
+    "amenities": [
+      "dessert",
+      "takeaway"
+    ],
+    "description": "Quầy chocolate và món ngọt gần Harbor Corner.",
+    "lat": 15.78659410635966,
+    "lng": 108.40952788558832
+  },
+  {
+    "id": "fac_toilet_001",
+    "name": "Water World Restroom Hub",
+    "type": "toilet",
+    "zone_id": "water_world",
+    "tags": [
+      "accessible",
+      "baby_care"
+    ],
+    "kid_friendly": true,
+    "is_open": true,
+    "crowd_level": "low",
+    "wait_time_min": 0,
+    "distance_map": {
+      "harbor_corner": 300,
+      "folk_culture_island": 670,
+      "river_safari": 720,
+      "adventure_land": 360,
+      "water_world": 70,
+      "indoor_games": 780
+    },
+    "walk_time_map": {
+      "harbor_corner": 5,
+      "folk_culture_island": 10,
+      "river_safari": 11,
+      "adventure_land": 5,
+      "water_world": 1,
+      "indoor_games": 11
+    },
+    "amenities": [
+      "baby_care",
+      "accessible_stall"
+    ],
+    "description": "Cụm nhà vệ sinh trung tâm gần lối vào Water World.",
+    "lat": 15.789138245480403,
+    "lng": 108.40828064942237
+  },
+  {
+    "id": "fac_toilet_002",
+    "name": "Indoor Games Restroom",
+    "type": "toilet",
+    "zone_id": "indoor_games",
+    "tags": [
+      "accessible"
+    ],
+    "kid_friendly": true,
+    "is_open": true,
+    "crowd_level": "low",
+    "wait_time_min": 0,
+    "distance_map": {
+      "harbor_corner": 640,
+      "folk_culture_island": 950,
+      "river_safari": 1020,
+      "adventure_land": 420,
+      "water_world": 790,
+      "indoor_games": 40
+    },
+    "walk_time_map": {
+      "harbor_corner": 10,
+      "folk_culture_island": 14,
+      "river_safari": 15,
+      "adventure_land": 6,
+      "water_world": 12,
+      "indoor_games": 1
+    },
+    "amenities": [
+      "accessible_stall"
+    ],
+    "description": "Nhà vệ sinh trong khối Indoor Games.",
+    "lat": 15.78707580947385,
+    "lng": 108.41008062289654
+  },
+  {
+    "id": "fac_toilet_003",
+    "name": "River Safari Restroom",
+    "type": "toilet",
+    "zone_id": "river_safari",
+    "tags": [
+      "family"
+    ],
+    "kid_friendly": true,
+    "is_open": true,
+    "crowd_level": "medium",
+    "wait_time_min": 0,
+    "distance_map": {
+      "harbor_corner": 500,
+      "folk_culture_island": 240,
+      "river_safari": 80,
+      "adventure_land": 700,
+      "water_world": 620,
+      "indoor_games": 860
+    },
+    "walk_time_map": {
+      "harbor_corner": 7,
+      "folk_culture_island": 4,
+      "river_safari": 1,
+      "adventure_land": 10,
+      "water_world": 9,
+      "indoor_games": 12
+    },
+    "amenities": [
+      "baby_care"
+    ],
+    "description": "Nhà vệ sinh gần bến thuyền River Safari.",
+    "lat": 15.79068173688096,
+    "lng": 108.41117003126487
+  },
+  {
+    "id": "fac_first_aid_001",
+    "name": "Harbor Corner Medical Station",
+    "type": "first_aid",
+    "zone_id": "harbor_corner",
+    "tags": [
+      "medical",
+      "emergency"
+    ],
+    "kid_friendly": true,
+    "is_open": true,
+    "crowd_level": "low",
+    "wait_time_min": 1,
+    "distance_map": {
+      "harbor_corner": 90,
+      "folk_culture_island": 400,
+      "river_safari": 500,
+      "adventure_land": 730,
+      "water_world": 420,
+      "indoor_games": 320
+    },
+    "walk_time_map": {
+      "harbor_corner": 2,
+      "folk_culture_island": 6,
+      "river_safari": 8,
+      "adventure_land": 11,
+      "water_world": 6,
+      "indoor_games": 5
+    },
+    "amenities": [
+      "nurse",
+      "bandage",
+      "wheelchair"
+    ],
+    "description": "Điểm hỗ trợ y tế gần khu cổng vào Harbor Corner.",
+    "lat": 15.787739,
+    "lng": 108.409514
+  },
+  {
+    "id": "fac_first_aid_002",
+    "name": "Water World First Aid Desk",
+    "type": "first_aid",
+    "zone_id": "water_world",
+    "tags": [
+      "medical",
+      "water_world"
+    ],
+    "kid_friendly": true,
+    "is_open": true,
+    "crowd_level": "low",
+    "wait_time_min": 1,
+    "distance_map": {
+      "harbor_corner": 340,
+      "folk_culture_island": 700,
+      "river_safari": 760,
+      "adventure_land": 390,
+      "water_world": 110,
+      "indoor_games": 820
+    },
+    "walk_time_map": {
+      "harbor_corner": 5,
+      "folk_culture_island": 10,
+      "river_safari": 11,
+      "adventure_land": 6,
+      "water_world": 2,
+      "indoor_games": 12
+    },
+    "amenities": [
+      "nurse",
+      "ice_pack"
+    ],
+    "description": "Bàn hỗ trợ sơ cứu gần khu vận hành Water World.",
+    "lat": 15.78707,
+    "lng": 108.410455
+  },
+  {
+    "id": "fac_rest_area_001",
+    "name": "River Safari Shade Rest Area",
+    "type": "rest_area",
+    "zone_id": "river_safari",
+    "tags": [
+      "shaded",
+      "family"
+    ],
+    "kid_friendly": true,
+    "is_open": true,
+    "crowd_level": "medium",
+    "wait_time_min": 0,
+    "distance_map": {
+      "harbor_corner": 480,
+      "folk_culture_island": 260,
+      "river_safari": 60,
+      "adventure_land": 690,
+      "water_world": 610,
+      "indoor_games": 840
+    },
+    "walk_time_map": {
+      "harbor_corner": 7,
+      "folk_culture_island": 4,
+      "river_safari": 1,
+      "adventure_land": 10,
+      "water_world": 9,
+      "indoor_games": 12
+    },
+    "amenities": [
+      "bench",
+      "fan",
+      "shade"
+    ],
+    "description": "Khu nghỉ chân có mái che gần bến River Safari.",
+    "lat": 15.790293422521918,
+    "lng": 108.41219083860923
+  },
+  {
+    "id": "fac_rest_area_002",
+    "name": "Harbor Corner Bench Garden",
+    "type": "rest_area",
+    "zone_id": "harbor_corner",
+    "tags": [
+      "shaded",
+      "bench"
+    ],
+    "kid_friendly": true,
+    "is_open": true,
+    "crowd_level": "low",
+    "wait_time_min": 0,
+    "distance_map": {
+      "harbor_corner": 130,
+      "folk_culture_island": 440,
+      "river_safari": 530,
+      "adventure_land": 770,
+      "water_world": 310,
+      "indoor_games": 350
+    },
+    "walk_time_map": {
+      "harbor_corner": 2,
+      "folk_culture_island": 6,
+      "river_safari": 8,
+      "adventure_land": 11,
+      "water_world": 5,
+      "indoor_games": 5
+    },
+    "amenities": [
+      "bench",
+      "shade"
+    ],
+    "description": "Khu ghế nghỉ gần quảng trường Harbor Corner.",
+    "lat": 15.786326953438365,
+    "lng": 108.40825857031776
+  },
+  {
+    "id": "fac_locker_001",
+    "name": "Water World Locker House",
+    "type": "locker",
+    "zone_id": "water_world",
+    "tags": [
+      "secure",
+      "water_world"
+    ],
+    "kid_friendly": true,
+    "is_open": true,
+    "crowd_level": "medium",
+    "wait_time_min": 6,
+    "distance_map": {
+      "harbor_corner": 320,
+      "folk_culture_island": 690,
+      "river_safari": 740,
+      "adventure_land": 380,
+      "water_world": 90,
+      "indoor_games": 800
+    },
+    "walk_time_map": {
+      "harbor_corner": 5,
+      "folk_culture_island": 10,
+      "river_safari": 11,
+      "adventure_land": 6,
+      "water_world": 2,
+      "indoor_games": 12
+    },
+    "amenities": [
+      "digital_lock",
+      "bag_storage"
+    ],
+    "description": "Khu locker phía sau cụm dịch vụ gần biển Water World.",
+    "lat": 15.787936689152907,
+    "lng": 108.40769217916463
+  },
+  {
+    "id": "fac_locker_002",
+    "name": "Harbor Gate Locker Point",
+    "type": "locker",
+    "zone_id": "harbor_corner",
+    "tags": [
+      "secure",
+      "entrance"
+    ],
+    "kid_friendly": true,
+    "is_open": true,
+    "crowd_level": "medium",
+    "wait_time_min": 8,
+    "distance_map": {
+      "harbor_corner": 60,
+      "folk_culture_island": 390,
+      "river_safari": 490,
+      "adventure_land": 720,
+      "water_world": 370,
+      "indoor_games": 300
+    },
+    "walk_time_map": {
+      "harbor_corner": 1,
+      "folk_culture_island": 6,
+      "river_safari": 7,
+      "adventure_land": 11,
+      "water_world": 6,
+      "indoor_games": 5
+    },
+    "amenities": [
+      "bag_storage",
+      "staff_assisted"
+    ],
+    "description": "Điểm gửi đồ gần cổng kiểm soát Harbor Corner.",
+    "lat": 15.785884,
+    "lng": 108.407893
+  },
+  {
+    "id": "fac_water_001",
+    "name": "Indoor Games Water Refill Station",
+    "type": "drinking_water",
+    "zone_id": "indoor_games",
+    "tags": [
+      "refill",
+      "cold_water"
+    ],
+    "kid_friendly": true,
+    "is_open": true,
+    "crowd_level": "low",
+    "wait_time_min": 0,
+    "distance_map": {
+      "harbor_corner": 650,
+      "folk_culture_island": 960,
+      "river_safari": 1000,
+      "adventure_land": 410,
+      "water_world": 780,
+      "indoor_games": 50
+    },
+    "walk_time_map": {
+      "harbor_corner": 10,
+      "folk_culture_island": 14,
+      "river_safari": 15,
+      "adventure_land": 6,
+      "water_world": 11,
+      "indoor_games": 1
+    },
+    "amenities": [
+      "cold_water",
+      "bottle_refill"
+    ],
+    "description": "Điểm tiếp nước trong nhà tại khu Indoor Games.",
+    "lat": 15.787982167160775,
+    "lng": 108.41073208465507
+  },
+  {
+    "id": "fac_water_002",
+    "name": "Adventure Land Hydration Point",
+    "type": "drinking_water",
+    "zone_id": "adventure_land",
+    "tags": [
+      "refill",
+      "cold_water"
+    ],
+    "kid_friendly": true,
+    "is_open": true,
+    "crowd_level": "low",
+    "wait_time_min": 0,
+    "distance_map": {
+      "harbor_corner": 740,
+      "folk_culture_island": 900,
+      "river_safari": 760,
+      "adventure_land": 70,
+      "water_world": 420,
+      "indoor_games": 400
+    },
+    "walk_time_map": {
+      "harbor_corner": 11,
+      "folk_culture_island": 13,
+      "river_safari": 11,
+      "adventure_land": 1,
+      "water_world": 6,
+      "indoor_games": 6
+    },
+    "amenities": [
+      "cold_water",
+      "bottle_refill"
+    ],
+    "description": "Điểm lấy nước gần cụm trò chơi cảm giác mạnh Adventure Land.",
+    "lat": 15.787278000337174,
+    "lng": 108.41168705727584
+  },
+  {
+    "id": "fac_souvenir_001",
+    "name": "Riveria Souvenir",
+    "type": "souvenir",
+    "zone_id": "harbor_corner",
+    "tags": [
+      "gift",
+      "merchandise"
+    ],
+    "kid_friendly": true,
+    "is_open": true,
+    "crowd_level": "low",
+    "wait_time_min": 0,
+    "distance_map": {
+      "harbor_corner": 110,
+      "folk_culture_island": 420,
+      "river_safari": 510,
+      "adventure_land": 750,
+      "water_world": 390,
+      "indoor_games": 330
+    },
+    "walk_time_map": {
+      "harbor_corner": 2,
+      "folk_culture_island": 6,
+      "river_safari": 8,
+      "adventure_land": 11,
+      "water_world": 6,
+      "indoor_games": 5
+    },
+    "amenities": [
+      "gift_wrapping"
+    ],
+    "description": "Cửa hàng lưu niệm Riveria tại khu vực bến cảng giao thoa Harbor Corner.",
+    "lat": 15.787195623223077,
+    "lng": 108.40921598988636
+  },
+  {
+    "id": "fac_lostfound_001",
+    "name": "Harbor Corner Lost & Found Desk",
+    "type": "lost_found",
+    "zone_id": "harbor_corner",
+    "tags": [
+      "support",
+      "lost_item"
+    ],
+    "kid_friendly": true,
+    "is_open": true,
+    "crowd_level": "low",
+    "wait_time_min": 5,
+    "distance_map": {
+      "harbor_corner": 80,
+      "folk_culture_island": 400,
+      "river_safari": 500,
+      "adventure_land": 730,
+      "water_world": 380,
+      "indoor_games": 310
+    },
+    "walk_time_map": {
+      "harbor_corner": 1,
+      "folk_culture_island": 6,
+      "river_safari": 8,
+      "adventure_land": 11,
+      "water_world": 6,
+      "indoor_games": 5
+    },
+    "amenities": [
+      "staff_assisted"
+    ],
+    "description": "Quầy thất lạc hành lý và đồ đạc, nằm gần cổng chính.",
+    "lat": 15.785884,
+    "lng": 108.407893
+  },
+  {
+    "id": "fac_ticket_001",
+    "name": "Main Gate Ticket Support Counter",
+    "type": "ticket_support",
+    "zone_id": "harbor_corner",
+    "tags": [
+      "ticket",
+      "support"
+    ],
+    "kid_friendly": true,
+    "is_open": true,
+    "crowd_level": "medium",
+    "wait_time_min": 10,
+    "distance_map": {
+      "harbor_corner": 50,
+      "folk_culture_island": 380,
+      "river_safari": 480,
+      "adventure_land": 710,
+      "water_world": 360,
+      "indoor_games": 290
+    },
+    "walk_time_map": {
+      "harbor_corner": 1,
+      "folk_culture_island": 6,
+      "river_safari": 7,
+      "adventure_land": 10,
+      "water_world": 5,
+      "indoor_games": 4
+    },
+    "amenities": [
+      "ticket_printing",
+      "consultation"
+    ],
+    "description": "Quầy hỗ trợ vé và tư vấn thông tin ngay cổng chính VinWonders.",
+    "lat": 15.786262,
+    "lng": 108.407787
+  }
+]
