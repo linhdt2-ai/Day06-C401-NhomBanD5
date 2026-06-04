@@ -1,0 +1,62 @@
+[
+  {
+    "from_zone": "harbor_corner",
+    "to_zone": "water_world",
+    "direction_text": "Từ Bến cảng giao thoa, bạn đi thẳng qua Đại lộ chính khoảng 300m, rẽ trái tại vòng xuyến đài phun nước để đến cổng Công viên nước."
+  },
+  {
+    "from_zone": "harbor_corner",
+    "to_zone": "folk_culture_island",
+    "direction_text": "Từ Bến cảng, đi dọc theo bờ hồ về phía Đông khoảng 400m qua cây cầu nhỏ sẽ tới Đảo văn hóa dân gian."
+  },
+  {
+    "from_zone": "harbor_corner",
+    "to_zone": "river_safari",
+    "direction_text": "Từ cổng chính (Bến cảng), di chuyển theo đường trục chính lên phía Bắc, bắt xe điện nội khu hoặc đi bộ 500m để tới bến thuyền River Safari."
+  },
+  {
+    "from_zone": "harbor_corner",
+    "to_zone": "adventure_land",
+    "direction_text": "Từ Bến cảng, rẽ phải và đi theo con đường lớn dọc theo khu lâu đài khoảng 700m để vào Vùng đất phiêu lưu."
+  },
+  {
+    "from_zone": "harbor_corner",
+    "to_zone": "indoor_games",
+    "direction_text": "Khu trò chơi trong nhà nằm ngay trục trung tâm gần Bến cảng giao thoa, bạn chỉ cần đi bộ dọc theo khu phố châu Âu khoảng 200m."
+  },
+  {
+    "from_zone": "water_world",
+    "to_zone": "adventure_land",
+    "direction_text": "Từ cổng Công viên nước, rẽ phải và đi qua khu vực quảng trường lớn, băng qua cầu gỗ nhỏ là tới Vùng đất phiêu lưu."
+  },
+  {
+    "from_zone": "water_world",
+    "to_zone": "river_safari",
+    "direction_text": "Đi dọc theo đường vành đai phía Tây công viên nước, qua khu hồ tạo sóng khoảng 400m sẽ đến trạm đón khách River Safari."
+  },
+  {
+    "from_zone": "water_world",
+    "to_zone": "indoor_games",
+    "direction_text": "Từ Công viên nước đi bộ ngược lại hướng Nam về trung tâm công viên khoảng 300m là thấy lâu đài Trò chơi trong nhà."
+  },
+  {
+    "from_zone": "folk_culture_island",
+    "to_zone": "river_safari",
+    "direction_text": "Đi men theo con đường rợp bóng cây dọc bờ sông từ Đảo văn hóa dân gian lên phía Bắc khoảng 400m."
+  },
+  {
+    "from_zone": "folk_culture_island",
+    "to_zone": "indoor_games",
+    "direction_text": "Qua cầu chính từ Đảo văn hóa dân gian, rẽ trái tại ngã ba để vào khu Trò chơi trong nhà."
+  },
+  {
+    "from_zone": "adventure_land",
+    "to_zone": "river_safari",
+    "direction_text": "Vùng đất phiêu lưu và River Safari cách nhau khá xa. Bạn nên đi ngược về trung tâm hoặc bắt xe điện tuyến số 2."
+  },
+  {
+    "from_zone": "adventure_land",
+    "to_zone": "indoor_games",
+    "direction_text": "Từ Vùng đất phiêu lưu, đi thẳng theo đại lộ hướng Nam về lại khu vực cổng chính, Khu trò chơi trong nhà sẽ nằm bên tay phải."
+  }
+]

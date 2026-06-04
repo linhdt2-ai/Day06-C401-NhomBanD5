@@ -1,0 +1,32 @@
+[
+  {
+    "id": "harbor_corner",
+    "name": "Harbor Corner",
+    "description": "Khu cổng vào mô phỏng thương cảng, tập trung nhiều dịch vụ và nhà hàng."
+  },
+  {
+    "id": "folk_culture_island",
+    "name": "Island of Folk Culture",
+    "description": "Khu văn hóa dân gian với không gian làng nghề, ẩm thực và biểu diễn truyền thống."
+  },
+  {
+    "id": "river_safari",
+    "name": "River Safari",
+    "description": "Khu tham quan động vật bán hoang dã bằng thuyền."
+  },
+  {
+    "id": "adventure_land",
+    "name": "Adventure Land",
+    "description": "Khu trò chơi cảm giác mạnh ngoài trời."
+  },
+  {
+    "id": "water_world",
+    "name": "Water World",
+    "description": "Khu công viên nước với hồ tạo sóng, đường trượt và dịch vụ gửi đồ."
+  },
+  {
+    "id": "indoor_games",
+    "name": "Indoor Games",
+    "description": "Khu trò chơi trong nhà và dãy nhà hàng phong cách châu Âu."
+  }
+]

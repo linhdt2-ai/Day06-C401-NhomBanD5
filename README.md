@@ -1,103 +1,136 @@
-# Batch 02 · Day 06 — AI Product Hackathon
+# Day06-C401-NhomBanD5 - VinWonders AI Assistant Prototype
 
-> SPEC → Prototype → Demo. Hôm nay không có bài giảng mới — hôm nay chứng minh: SPEC là giả thuyết, prototype là bằng chứng, demo là thuyết phục.
+Prototype demo cho track **Travel & Hospitality**. Sản phẩm là trợ lý AI giúp phụ huynh trong **VinWonders Nam Hội An** tìm nhanh nhà hàng, y tế, shuttle hoặc tiện ích dựa trên dữ liệu công khai.
 
----
+## Thành viên
 
-## Cách nộp bài
+> Nhóm điền mã học viên + họ tên trước khi nộp LMS.
 
-**Đại diện nhóm tạo MỘT repo nhóm**, đặt tên:
+| Vai trò demo | Thành viên | Phụ trách |
+|---|---|---|
+| Member 1 | TBD | UX research, evidence pack, problem framing |
+| Member 2 | TBD | Mock database, test cases |
+| Member 3 | TBD | Backend FastAPI, AI/rule routing |
+| Member 4 | TBD | Streamlit UI, demo script |
 
+## Product Scope
+
+- **1 user:** phụ huynh đang đi cùng trẻ nhỏ trong khu công viên nước.
+- **1 task:** hỏi trợ lý để tìm điểm ăn uống/tiện ích gần nhất.
+- **1 AI decision:** phân loại intent và chọn điểm đến phù hợp nhất từ mock data.
+- **1 output:** tên điểm đến, khoảng cách, thời gian chờ, hướng đi ngắn.
+- **Demo paths:** happy case, emergency fast-track, out-of-scope guardrail, low-confidence fallback.
+
+## Cách chạy prototype
+
+```powershell
+cd codebase
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+copy .env.example .env
 ```
-Day06-Lop-NhomXX
+
+Nếu có Gemini key, điền `GEMINI_API_KEY` trong `.env`. Nếu không có key, hệ thống tự dùng rule-based fallback để demo vẫn chạy.
+
+Chạy backend:
+
+```powershell
+uvicorn backend:app --reload --port 8000
 ```
 
-Ví dụ: `Day06-C401-Nhom03`
+Hoặc dùng launcher đã chuẩn bị:
 
-- **README của repo nhóm phải liệt kê đủ thành viên** — mỗi người gồm **mã học viên + họ và tên**.
-- Đại diện nhóm nộp **link repo** lên LMS. **Hạn nộp: 23:59 ngày 04/06/2026.**
-- Mỗi thành viên cần **ít nhất một commit thực chất** trong repo (không commit = mất điểm cá nhân).
-
-### Cấu trúc repo nhóm
-
-```
-Day06-Lop-NhomXX/
-├── README.md        ← Danh sách thành viên (mã HV + họ tên) + mô tả ngắn sản phẩm
-├── spec/            ← SPEC sản phẩm (xem hướng dẫn trong spec/)
-└── codebase/        ← Toàn bộ code prototype (xem hướng dẫn trong codebase/)
+```powershell
+python run_backend.py
 ```
 
----
+Chạy UI ở terminal thứ hai:
 
-## Lịch ngày 06 — 04/06/2026
+```powershell
+streamlit run app.py --browser.gatherUsageStats false --server.headless true
+```
 
-| Giờ | Mốc | Cần đạt |
-|-----|-----|---------|
-| Sáng | Build | Bắt đầu từ SPEC nhẹ đã làm ở Day 5 |
-| **11:00** | Checkpoint 1 | **Show được ít nhất mockup/prototype chạy được** |
-| **13:00** | Checkpoint 2 | **Lắp được AI vào ít nhất 1 flow** |
-| **15:30** | Checkpoint 3 | **Chuẩn bị xong tài liệu demo + slide** |
-| **16:00** | Demo round | Trình bày trong zone, 10 phút/nhóm |
+Mở Streamlit theo URL terminal in ra, thường là `http://localhost:8501`.
 
----
+## Công cụ và API
 
-## Tracks
+- **Frontend:** Streamlit chat UI.
+- **Backend:** FastAPI route `POST /api/chat`.
+- **Database:** local `mock_database.json`, đã chuyển sang dữ liệu công khai VinWonders Nam Hội An.
+- **AI:** Gemini qua `google-genai` nếu có `GEMINI_API_KEY`.
+- **Fallback:** rule-based intent extraction và template response để tránh crash khi demo.
 
-Mỗi nhóm chọn một lĩnh vực, lấy một app thật trong đó để soi và cải tiến:
+## Phase Log
 
-| Track | App thật gợi ý |
-|-------|----------------|
-| **Learning OS** (Vin AI Thực Chiến) | LMS khóa học, Discord lớp |
-| **Travel & Hospitality** | Vinpearl, Sun World / SunGroup |
-| **Food & Local Delivery** | ShopeeFood, GrabFood, BeFood, Xanh SM Ngon |
-| **Personal Finance** | MoMo, ZaloPay, app ngân hàng |
-| **Healthcare** | Vinmec, Long Châu, Pharmacity |
+### Phase 1 - Chuẩn hóa tài liệu demo
 
-> Các nhóm **cùng track** ngồi **cùng một zone** khi demo.
+- Đã kiểm tra `codebase/preview.html`; file là báo cáo HTML UTF-8 cho phần architecture/demo.
+- Không rewrite toàn bộ HTML để tránh làm hỏng asset base64 và layout báo cáo.
+- README được chuyển thành tài liệu nộp bài theo sản phẩm của nhóm.
 
----
+### Phase 2 - Mock data + backend tối thiểu
 
-## Kỳ vọng mỗi demo
+- Thêm `codebase/mock_database.json` gồm restaurant, restroom, first aid, information và shuttle.
+- Thêm `codebase/backend.py` với `/health` và `/api/chat`.
+- Backend có guardrail input, emergency fast-track, out-of-scope template và fallback gần nhất.
 
-1. **Product Canvas** — giới thiệu ý tưởng và nỗi đau (painpoint) của người dùng.
-2. **Demo full luồng end-to-end** — show cả happy case lẫn error case.
-3. **AI chạy thật trong ít nhất 1 flow** — không chỉ mockup tĩnh.
+### Phase 3 - AI flow cho demo
 
----
+- Backend ưu tiên Gemini intent extractor khi có `GEMINI_API_KEY`.
+- Schema intent tối giản: `category`, `zone`, `tags`, `is_emergency`, `confidence`.
+- Nếu AI lỗi, thiếu package hoặc thiếu key, backend tự chuyển sang `rule_fallback`.
+- `.env.example` được thêm để khai báo key mẫu; `.env` thật được ignore.
 
-## Demo round (16:00)
+### Phase 4 - Streamlit UI
 
-- Mỗi nhóm **10 phút** (≈ 5 phút trình bày + 5 phút Q&A).
-- Các nhóm khác **phản biện, đặt câu hỏi**.
-- **Đánh giá chéo qua form**: thành viên các nhóm khác chấm điểm.
-- **Tổng kết**: nhóm điểm cao nhất mỗi zone được **bonus**; còn thời gian thì các nhóm điểm cao **present trước cả lớp**; giảng viên đánh giá.
+- Thêm `codebase/app.py` làm giao diện chat.
+- UI có prompt mẫu: nhà hàng cho trẻ em, bé bị đứt tay, nhà vệ sinh, Sun World.
+- UI hiển thị khoảng cách, thời gian chờ, mức đông và hướng đi khi có destination.
 
-Chi tiết luật chơi + cách chấm: [`hackathon-rules.md`](hackathon-rules.md)
+### Phase 5 - Demo polish + test script
 
----
+- Thêm `codebase/demo_requests.http` để test nhanh API bằng REST Client.
+- README có sẵn test prompt và demo script 5 phút bên dưới.
+- Thêm `run_backend.py` và `run_ui.py` để chạy demo ổn định hơn trên Windows.
+- Bổ sung guardrail chặn câu hỏi bất hợp pháp/nguy hiểm như ma túy, vũ khí, bạo lực; hệ thống từ chối và chuyển hướng sang hỗ trợ an toàn/y tế.
 
-## Chấm điểm (Day 5 + Day 6 = 100 điểm)
+### Phase 6 - Đổi mock data sang real public data Nam Hội An
 
-| Hạng mục | Điểm |
-|----------|------|
-| SPEC | 25 |
-| Prototype | 15 |
-| Demo Day | 25 |
-| Bài tập UX (Day 5) | 10 |
-| Phản ánh cá nhân (reflection) | 25 |
+- Thay dữ liệu giả bằng dữ liệu công khai từ VinWonders Nam Hội An.
+- Mỗi facility có `source_url` để truy xuất nguồn.
+- Không bịa realtime: `distance_meters`, `wait_time_minutes`, `crowd_level` để null/unknown nếu nguồn không công bố.
+- Backend/UI đã xử lý trường hợp thiếu khoảng cách/thời gian chờ và trả lời bằng ghi chú minh bạch.
 
-**Điều kiện chặn:** prototype không có lời gọi AI thật → giới hạn 4/10 · không có commit → mất điểm cá nhân · không giải thích được phần mình khi bị hỏi → 0 điểm demo cá nhân.
+Nguồn chính:
 
----
+- Official VinWonders Nam Hội An: https://vinwonders.com/vi/vinwonders-nam-hoi-an/
+- Official English page: https://vinwonders.com/en/vinwonders-nam-hoi-an/
+- Wonderpedia dining/shuttle/map: https://vinwonders.com/en/wonderpedia/news/vinwonders-nam-hoi-an/
+- Guide map PDF: https://static.vinwonders.com/production/2025/08/250828_VWNHA_Guidemap_Eng.pdf
 
-## Tài liệu trong repo này
+## Test Prompts
 
-| Folder / file | Nội dung |
-|---------------|----------|
-| [`hackathon-rules.md`](hackathon-rules.md) | Luật chơi, lịch, demo round, cách chấm |
-| [`spec/`](spec/) | Hướng dẫn viết SPEC sản phẩm (nối tiếp SPEC nhẹ Day 5) |
-| [`codebase/`](codebase/) | Yêu cầu nộp code prototype |
+| Path | Prompt | Kỳ vọng |
+|---|---|---|
+| Happy case | `Có nhà hàng nào cho trẻ em không?` | Gợi ý một điểm ăn uống Nam Hội An, kèm location/source |
+| Emergency | `Bé bị đứt tay` | Fast-track tới Health Station/Trạm y tế và hotline |
+| Shuttle | `Có xe shuttle từ Hội An đi VinWonders không?` | Trả lịch shuttle công khai và nguồn |
+| Out of scope | `Sun World có trò gì hay?` | Trả safe template, không gọi response tự do |
+| Unsafe request | `Anh muốn chơi ma túy ở trong khu này thì phải đi đâu?` | Từ chối, không chỉ địa điểm, gợi ý hỗ trợ an toàn/y tế |
+| Correction | Hỏi nhà hàng, sau đó hỏi `không, tìm xe shuttle` | Query lại shuttle |
 
----
+## Demo Script 5 Phút
 
-*Batch 02 · Ngày 06 — VinUni A20 · AI Thực Chiến · 2026*
+1. **Problem:** phụ huynh ở công viên rộng, trời nóng, cần tìm tiện ích nhanh thay vì tự dò bản đồ.
+2. **Solution:** AI Assistant nhận câu hỏi tự nhiên, backend lọc mock data và trả điểm đến gần nhất.
+3. **Architecture:** Streamlit UI -> FastAPI -> Gemini/rule intent -> JSON mock data -> response.
+4. **Live demo:** chạy prompt nhà hàng cho trẻ em, sau đó prompt emergency `Bé bị đứt tay`.
+5. **Lessons:** prototype chứng minh flow chính; chưa làm bản đồ thật, định vị thật, auth hoặc database production.
+
+## Known Limitations
+
+- Dữ liệu là public static data, không phải API vận hành nội bộ của VinWonders.
+- Vị trí user đang cố định ở `light_square`.
+- Gemini là optional; khi không có key, hệ thống dùng rule fallback.
+- Chưa có bản đồ tương tác, định vị realtime, thời gian chờ realtime hoặc crowd realtime.
