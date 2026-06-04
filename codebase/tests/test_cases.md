@@ -1,0 +1,18 @@
+# Test Cases
+
+Bang test case cho rule-based prototype data -> retrieve -> rank -> answer draft.
+
+| ID | Path | Input demo | Muc tieu kiem tra | Expected behavior | Status | Notes |
+|---|---|---|---|---|---|---|
+| TC01 | Happy path | Toi dang o Ben cang giao thoa, di voi con nho, muon tim cho an gan day, co dieu hoa va khong phai cho lau. | Tim nha hang phu hop cho gia dinh co tre nho, uu tien gan va cho it. | Tra ve `restaurant`, zone `Ben cang giao thoa`, confidence cao hoac trung binh, goi y dia diem dang mo. | Ready | Nen uu tien Food Court, Deliland hoac Lotteria tuy diem. |
+| TC02 | Low confidence | Toi muon an mon nhe, cho nao cung duoc nhung dung qua dong. | Thu nghiem truy van mo ho nhung van co keyword an uong. | Tra ve `restaurant` hoac `drink`, confidence medium neu ket qua khong that ro, co ly do ve crowd/wait. | Ready | Kiem tra xu huong khong chon diem qua dong neu co lua chon khac. |
+| TC03 | Fallback | Toi dang o River Safari, muon tim nha hang Nhat trong vong 100m. | Khong co facility dung mon an/ban kinh qua hep. | Khong hallucinate nha hang Nhat; dua ra ket qua gan nhat trong category restaurant neu co, confidence medium/low. | Ready | Kiem tra fallback thay vi tra sai tu tin. |
+| TC04 | Correction | Khong, toi muon tim nha ve sinh gan nhat chu khong phai nha hang. | Truy van sua nhu cau. | Tra ve `restroom`, uu tien nha ve sinh gan nhat dang mo. | Ready | Mo phong luot chat tiep theo sau khi user correction. |
+| TC05 | Emergency | Con toi bi nga o The gioi nuoc, can so cuu gap. | Nhan dien nhu cau y te khan cap. | Tra ve `medical`, zone `The gioi nuoc`, uu tien diem so cuu dang mo va gan. | Ready | Day la fast-track rule-based, chua dung LLM. |
+| TC06 | Closed guardrail | Toi dang o River Safari, muon mua kem gan nhat cho con. | Kiem tra khong de diem `closed` len top 1 neu con diem dang mo. | Khong chon `Quay kem River Safari` neu no dang `closed`; dua phuong an mo thay the. | Ready | Kha nang confidence medium vi phuong an mo co the xa hon. |
+| TC07 | Out of scope | Toi muon dat khach san o Da Nang toi nay. | Nhan dien ngoai pham vi prototype. | Tra ve `out_of_scope`, confidence low, answer draft an toan. | Ready | Khong de xuat facility trong cong vien cho nhu cau nay. |
+| TC08 | Distance constraint | Toi dang o River Safari, muon tim nha hang trong vong 100m. | Kiem tra parse `max_distance_meters` va fallback khi khong co ket qua khop day du. | `fallback_used = true`, answer noi ro khong co nha hang trong 100m va de xuat phuong an gan nhat hien co. | Ready | Can debug trace co `max_distance_meters = 100`. |
+| TC09 | Ranking with comfort constraints | Toi dang o Ben cang giao thoa, muon an nhanh, khong dong, co dieu hoa. | Kiem tra ranking uu tien wait ngan, it dong, air_conditioner. | Uu tien diem dang mo, wait thap, crowd thap/trung binh va co dieu hoa. | Ready | Food Court la ung vien manh. |
+| TC10 | Exclude tags | Toi di voi con nho, khong muon an do cay. | Kiem tra parse `has_children` va `exclude_tags`. | Khong uu tien diem co tag `spicy_options`; de xuat diem family-friendly khac. | Ready | Khong nen day `Chingu` len top. |
+| TC11 | Ice cream near River Safari | Toi dang o River Safari, muon mua kem gan nhat cho con. | Kiem tra preferred tag `kem`, has_children va closed guardrail. | Khong chon quay kem dang dong; fallback sang lua chon mo du xa hon. | Ready | Confidence co the low neu chi con phuong an xa. |
+| TC12 | Emergency duplicate check | Con toi bi nga o The gioi nuoc, can so cuu gap. | Xac nhan parser urgency va ranking y te van on dinh. | Diem y te gan nhat dang mo phai la top 1, confidence cao. | Ready | Dung de doi chieu voi TC05 sau khi them constraints. |

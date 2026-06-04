@@ -1,0 +1,860 @@
+{
+  "metadata": {
+    "project": "AI Assistant tại VinWonders",
+    "prototype_site": "VinWonders Nam Hội An",
+    "version": "0.1.0",
+    "language": "vi",
+    "status": "mock_data_for_prototype",
+    "created_at": "2026-06-04",
+    "important_note": "Dữ liệu này dùng cho prototype/lab. Tên một số nhà hàng/phân khu dựa trên nguồn công khai; khoảng cách, crowd_level, wait time, direction_hint và một số tiện ích là giả lập. Không dùng như bản đồ/vận hành chính thức.",
+    "source_basis": [
+      "VinWonders/Vinpearl map pages identify main zones: Harbor Corner, Island of Folk Culture, River Safari, Adventure Land, Water World, Indoor Games.",
+      "Public VinWonders/Vinpearl pages mention dining names such as Deliland, Food Court, Chingu, Lotteria, Cafe Teria, Cafe Gamie and Happy Snacks."
+    ],
+    "categories": [
+      "restaurant",
+      "drink",
+      "restroom",
+      "medical",
+      "rest_area",
+      "kids_activity",
+      "attraction"
+    ],
+    "recommended_demo_slice": "Phụ huynh đi cùng trẻ nhỏ cần tìm chỗ ăn gần, có điều hòa và ít phải chờ."
+  },
+  "zones": [
+    {
+      "id": "harbor_corner",
+      "name": "Bến cảng giao thoa",
+      "aliases": [
+        "Harbor Corner",
+        "cổng vào",
+        "quảng trường"
+      ],
+      "description": "Khu gần cổng vào, mô phỏng không gian giao thoa Đông - Tây và phố cảng Hội An.",
+      "approx_position": {
+        "x": 50,
+        "y": 92
+      }
+    },
+    {
+      "id": "adventure_land",
+      "name": "Vùng đất phiêu lưu",
+      "aliases": [
+        "Adventure Land",
+        "khu trò chơi cảm giác mạnh"
+      ],
+      "description": "Khu trò chơi vận động, cảm giác mạnh và nhiều điểm vui chơi ngoài trời.",
+      "approx_position": {
+        "x": 70,
+        "y": 58
+      }
+    },
+    {
+      "id": "water_world",
+      "name": "Thế giới nước",
+      "aliases": [
+        "Water World",
+        "công viên nước"
+      ],
+      "description": "Khu công viên nước với hồ sóng, đường trượt và trò chơi dưới nước.",
+      "approx_position": {
+        "x": 25,
+        "y": 72
+      }
+    },
+    {
+      "id": "river_safari",
+      "name": "River Safari",
+      "aliases": [
+        "Vườn thú trên sông",
+        "du khảo trên sông"
+      ],
+      "description": "Khu du khảo trên sông, tham quan động vật bằng thuyền.",
+      "approx_position": {
+        "x": 18,
+        "y": 35
+      }
+    },
+    {
+      "id": "island_of_folk_culture",
+      "name": "Đảo Văn hóa Dân gian",
+      "aliases": [
+        "Island of Folk Culture",
+        "đảo văn hoá",
+        "làng nghề"
+      ],
+      "description": "Khu trải nghiệm văn hóa dân gian, làng nghề truyền thống và show diễn.",
+      "approx_position": {
+        "x": 58,
+        "y": 22
+      }
+    },
+    {
+      "id": "indoor_games",
+      "name": "Khu trò chơi trong nhà",
+      "aliases": [
+        "Indoor Games",
+        "trò chơi trong nhà"
+      ],
+      "description": "Khu trò chơi trong nhà, phù hợp khi trời nắng hoặc mưa.",
+      "approx_position": {
+        "x": 63,
+        "y": 76
+      }
+    }
+  ],
+  "facilities": [
+    {
+      "id": "food_001",
+      "name": "Nhà hàng Deliland",
+      "category": "restaurant",
+      "zone": "Bến cảng giao thoa",
+      "tags": [
+        "buffet",
+        "family",
+        "kids",
+        "air_conditioner",
+        "lunch",
+        "voucher_supported",
+        "large_group"
+      ],
+      "status": "open",
+      "crowd_level": "medium",
+      "estimated_wait_minutes": 10,
+      "suitable_for": [
+        "family_with_children",
+        "lunch",
+        "large_group"
+      ],
+      "description": "Nhà hàng buffet phù hợp gia đình, nhóm đông và khách muốn ăn trưa gần khu cổng vào.",
+      "distance_from_zone_meters": {
+        "Bến cảng giao thoa": 180,
+        "Khu trò chơi trong nhà": 320,
+        "Vùng đất phiêu lưu": 520,
+        "Thế giới nước": 720,
+        "Đảo Văn hóa Dân gian": 850,
+        "River Safari": 1200
+      },
+      "direction_hint_from_zone": {
+        "Bến cảng giao thoa": "Từ quảng trường trung tâm, đi theo trục chính hướng vào cụm nhà hàng gần khu cổng.",
+        "Khu trò chơi trong nhà": "Đi ra khỏi khu trò chơi trong nhà, rẽ về phía Bến cảng giao thoa khoảng 3-5 phút."
+      },
+      "source_type": "official_name_mock_attributes",
+      "mock_note": "Tên nhà hàng dựa trên nguồn công khai; khoảng cách, crowd/wait là dữ liệu giả lập."
+    },
+    {
+      "id": "food_002",
+      "name": "Food Court",
+      "category": "restaurant",
+      "zone": "Bến cảng giao thoa",
+      "tags": [
+        "family",
+        "kids",
+        "air_conditioner",
+        "rice",
+        "noodle",
+        "fast_service",
+        "voucher_supported"
+      ],
+      "status": "open",
+      "crowd_level": "low",
+      "estimated_wait_minutes": 6,
+      "suitable_for": [
+        "family_with_children",
+        "quick_lunch",
+        "low_wait",
+        "safe_default"
+      ],
+      "description": "Khu ăn nhanh nhiều lựa chọn, phù hợp khi phụ huynh đi cùng trẻ nhỏ và cần chỗ ăn ít phải chờ.",
+      "distance_from_zone_meters": {
+        "Bến cảng giao thoa": 220,
+        "Khu trò chơi trong nhà": 300,
+        "Vùng đất phiêu lưu": 480,
+        "Thế giới nước": 650,
+        "Đảo Văn hóa Dân gian": 820,
+        "River Safari": 1150
+      },
+      "direction_hint_from_zone": {
+        "Bến cảng giao thoa": "Đi theo biển chỉ dẫn khu ẩm thực, hướng về khu trò chơi trong nhà.",
+        "Vùng đất phiêu lưu": "Đi theo lối chính về phía Bến cảng giao thoa, qua khu trò chơi trong nhà."
+      },
+      "source_type": "official_name_mock_attributes",
+      "mock_note": "Dữ liệu dùng cho prototype; khoảng cách/trạng thái/chờ là giả lập."
+    },
+    {
+      "id": "food_003",
+      "name": "Chingu",
+      "category": "restaurant",
+      "zone": "Bến cảng giao thoa",
+      "tags": [
+        "korean_food",
+        "air_conditioner",
+        "family",
+        "voucher_supported",
+        "spicy_options"
+      ],
+      "status": "open",
+      "crowd_level": "high",
+      "estimated_wait_minutes": 18,
+      "suitable_for": [
+        "korean_food",
+        "adult_group",
+        "family_without_rush"
+      ],
+      "description": "Nhà hàng phong cách Hàn Quốc, phù hợp khi khách muốn đổi món nhưng có thể đông vào giờ trưa.",
+      "distance_from_zone_meters": {
+        "Bến cảng giao thoa": 260,
+        "Khu trò chơi trong nhà": 350,
+        "Vùng đất phiêu lưu": 540,
+        "Thế giới nước": 760,
+        "Đảo Văn hóa Dân gian": 880,
+        "River Safari": 1220
+      },
+      "direction_hint_from_zone": {
+        "Bến cảng giao thoa": "Từ trục chính khu Bến cảng giao thoa, đi về cụm nhà hàng gần khu ẩm thực."
+      },
+      "source_type": "official_name_mock_attributes",
+      "mock_note": "Dùng để test trường hợp phù hợp nhưng hơi đông/thời gian chờ cao."
+    },
+    {
+      "id": "food_004",
+      "name": "Lotteria",
+      "category": "restaurant",
+      "zone": "Bến cảng giao thoa",
+      "tags": [
+        "fast_food",
+        "kids",
+        "family",
+        "air_conditioner",
+        "burger",
+        "fried_chicken",
+        "voucher_supported"
+      ],
+      "status": "open",
+      "crowd_level": "medium",
+      "estimated_wait_minutes": 9,
+      "suitable_for": [
+        "children",
+        "quick_meal",
+        "familiar_food"
+      ],
+      "description": "Điểm ăn nhanh quen thuộc, phù hợp trẻ nhỏ và nhóm cần ăn nhanh.",
+      "distance_from_zone_meters": {
+        "Bến cảng giao thoa": 240,
+        "Khu trò chơi trong nhà": 310,
+        "Vùng đất phiêu lưu": 500,
+        "Thế giới nước": 690,
+        "Đảo Văn hóa Dân gian": 860,
+        "River Safari": 1180
+      },
+      "direction_hint_from_zone": {
+        "Bến cảng giao thoa": "Đi theo biển chỉ dẫn khu ẩm thực, nằm trong cụm nhà hàng gần cổng."
+      },
+      "source_type": "official_name_mock_attributes",
+      "mock_note": "Dữ liệu dùng cho prototype; khoảng cách/trạng thái/chờ là giả lập."
+    },
+    {
+      "id": "food_005",
+      "name": "Cafe Teria",
+      "category": "restaurant",
+      "zone": "Khu trò chơi trong nhà",
+      "tags": [
+        "cafe",
+        "snack",
+        "air_conditioner",
+        "kids",
+        "family",
+        "voucher_supported",
+        "rainy_day"
+      ],
+      "status": "open",
+      "crowd_level": "low",
+      "estimated_wait_minutes": 5,
+      "suitable_for": [
+        "snack_break",
+        "children",
+        "hot_weather",
+        "rainy_day"
+      ],
+      "description": "Điểm café/ăn nhẹ trong nhà, phù hợp khi trời nắng, mưa hoặc trẻ cần nghỉ ngơi.",
+      "distance_from_zone_meters": {
+        "Khu trò chơi trong nhà": 120,
+        "Bến cảng giao thoa": 330,
+        "Vùng đất phiêu lưu": 420,
+        "Thế giới nước": 620,
+        "Đảo Văn hóa Dân gian": 760,
+        "River Safari": 1100
+      },
+      "direction_hint_from_zone": {
+        "Khu trò chơi trong nhà": "Nằm trong khu trò chơi trong nhà, đi theo biển chỉ dẫn café/ăn nhẹ."
+      },
+      "source_type": "official_name_mock_attributes",
+      "mock_note": "Dữ liệu dùng cho prototype; khoảng cách/trạng thái/chờ là giả lập."
+    },
+    {
+      "id": "drink_001",
+      "name": "Cafe Gamie",
+      "category": "drink",
+      "zone": "Vùng đất phiêu lưu",
+      "tags": [
+        "cafe",
+        "drink",
+        "cold_drink",
+        "snack",
+        "rest_stop",
+        "voucher_supported"
+      ],
+      "status": "open",
+      "crowd_level": "medium",
+      "estimated_wait_minutes": 7,
+      "suitable_for": [
+        "drink_break",
+        "adult_group",
+        "rest_after_thrill_rides"
+      ],
+      "description": "Quầy café/đồ uống gần khu trò chơi, phù hợp nghỉ nhanh sau khi chơi trò cảm giác mạnh.",
+      "distance_from_zone_meters": {
+        "Vùng đất phiêu lưu": 180,
+        "Khu trò chơi trong nhà": 360,
+        "Bến cảng giao thoa": 560,
+        "Đảo Văn hóa Dân gian": 520,
+        "Thế giới nước": 780,
+        "River Safari": 980
+      },
+      "direction_hint_from_zone": {
+        "Vùng đất phiêu lưu": "Đi theo trục chính trong khu Vùng đất phiêu lưu, tìm biển café/đồ uống."
+      },
+      "source_type": "official_name_mock_attributes",
+      "mock_note": "Dữ liệu dùng cho prototype; khoảng cách/trạng thái/chờ là giả lập."
+    },
+    {
+      "id": "drink_002",
+      "name": "Happy Snacks Water World",
+      "category": "drink",
+      "zone": "Thế giới nước",
+      "tags": [
+        "snack",
+        "drink",
+        "cold_drink",
+        "kids",
+        "near_water_world",
+        "voucher_supported"
+      ],
+      "status": "open",
+      "crowd_level": "high",
+      "estimated_wait_minutes": 15,
+      "suitable_for": [
+        "snack_break",
+        "children",
+        "after_water_games"
+      ],
+      "description": "Quầy đồ uống/ăn nhẹ gần công viên nước, tiện nhưng dễ đông vào buổi trưa.",
+      "distance_from_zone_meters": {
+        "Thế giới nước": 160,
+        "Bến cảng giao thoa": 720,
+        "Khu trò chơi trong nhà": 620,
+        "Vùng đất phiêu lưu": 820,
+        "River Safari": 940,
+        "Đảo Văn hóa Dân gian": 1100
+      },
+      "direction_hint_from_zone": {
+        "Thế giới nước": "Từ hồ sóng, đi theo biển chỉ dẫn quầy đồ uống/ăn nhẹ gần lối ra khu nước."
+      },
+      "source_type": "official_name_mock_attributes",
+      "mock_note": "Dữ liệu dùng cho prototype; khoảng cách/trạng thái/chờ là giả lập."
+    },
+    {
+      "id": "restroom_001",
+      "name": "Nhà vệ sinh Bến cảng giao thoa",
+      "category": "restroom",
+      "zone": "Bến cảng giao thoa",
+      "tags": [
+        "restroom",
+        "baby_care_nearby",
+        "family",
+        "accessible",
+        "near_entrance"
+      ],
+      "status": "open",
+      "crowd_level": "low",
+      "estimated_wait_minutes": 0,
+      "suitable_for": [
+        "children",
+        "elderly",
+        "urgent_restroom"
+      ],
+      "description": "Nhà vệ sinh giả lập gần khu cổng vào.",
+      "distance_from_zone_meters": {
+        "Bến cảng giao thoa": 90,
+        "Khu trò chơi trong nhà": 260,
+        "Vùng đất phiêu lưu": 520,
+        "Thế giới nước": 650,
+        "Đảo Văn hóa Dân gian": 820,
+        "River Safari": 1150
+      },
+      "direction_hint_from_zone": {
+        "Bến cảng giao thoa": "Từ cổng vào, đi về phía bên phải quảng trường và theo biển chỉ dẫn WC."
+      },
+      "source_type": "mock_for_prototype",
+      "mock_note": "Dữ liệu dùng cho prototype; khoảng cách/trạng thái/chờ là giả lập."
+    },
+    {
+      "id": "restroom_002",
+      "name": "Nhà vệ sinh Thế giới nước",
+      "category": "restroom",
+      "zone": "Thế giới nước",
+      "tags": [
+        "restroom",
+        "shower_nearby",
+        "family",
+        "near_water_world",
+        "accessible"
+      ],
+      "status": "open",
+      "crowd_level": "medium",
+      "estimated_wait_minutes": 2,
+      "suitable_for": [
+        "children",
+        "after_water_games",
+        "urgent_restroom"
+      ],
+      "description": "Nhà vệ sinh giả lập trong khu công viên nước.",
+      "distance_from_zone_meters": {
+        "Thế giới nước": 80,
+        "River Safari": 800,
+        "Bến cảng giao thoa": 700,
+        "Khu trò chơi trong nhà": 610,
+        "Vùng đất phiêu lưu": 780,
+        "Đảo Văn hóa Dân gian": 1050
+      },
+      "direction_hint_from_zone": {
+        "Thế giới nước": "Từ khu hồ sóng, đi về phía khu thay đồ và theo biển WC."
+      },
+      "source_type": "mock_for_prototype",
+      "mock_note": "Dữ liệu dùng cho prototype; khoảng cách/trạng thái/chờ là giả lập."
+    },
+    {
+      "id": "restroom_003",
+      "name": "Nhà vệ sinh Đảo Văn hóa Dân gian",
+      "category": "restroom",
+      "zone": "Đảo Văn hóa Dân gian",
+      "tags": [
+        "restroom",
+        "family",
+        "near_show_area",
+        "accessible"
+      ],
+      "status": "open",
+      "crowd_level": "low",
+      "estimated_wait_minutes": 0,
+      "suitable_for": [
+        "children",
+        "elderly",
+        "after_show"
+      ],
+      "description": "Nhà vệ sinh giả lập gần khu show/làng nghề trên Đảo Văn hóa Dân gian.",
+      "distance_from_zone_meters": {
+        "Đảo Văn hóa Dân gian": 130,
+        "Vùng đất phiêu lưu": 560,
+        "River Safari": 720,
+        "Khu trò chơi trong nhà": 760,
+        "Bến cảng giao thoa": 900,
+        "Thế giới nước": 1100
+      },
+      "direction_hint_from_zone": {
+        "Đảo Văn hóa Dân gian": "Đi từ quảng trường dân gian về phía cụm làng nghề, theo biển WC."
+      },
+      "source_type": "mock_for_prototype",
+      "mock_note": "Dữ liệu dùng cho prototype; khoảng cách/trạng thái/chờ là giả lập."
+    },
+    {
+      "id": "medical_001",
+      "name": "Trạm y tế Bến cảng giao thoa",
+      "category": "medical",
+      "zone": "Bến cảng giao thoa",
+      "tags": [
+        "medical",
+        "first_aid",
+        "urgent",
+        "near_entrance",
+        "staff_support"
+      ],
+      "status": "open",
+      "crowd_level": "low",
+      "estimated_wait_minutes": 0,
+      "suitable_for": [
+        "emergency",
+        "children",
+        "elderly",
+        "first_aid"
+      ],
+      "description": "Điểm y tế giả lập gần khu cổng vào, dùng cho tình huống khẩn cấp.",
+      "distance_from_zone_meters": {
+        "Bến cảng giao thoa": 140,
+        "Khu trò chơi trong nhà": 300,
+        "Vùng đất phiêu lưu": 520,
+        "Thế giới nước": 700,
+        "Đảo Văn hóa Dân gian": 860,
+        "River Safari": 1160
+      },
+      "direction_hint_from_zone": {
+        "Bến cảng giao thoa": "Từ quảng trường trung tâm, đi về phía quầy thông tin/cổng vào và tìm biển y tế.",
+        "Vùng đất phiêu lưu": "Đi nhanh theo trục chính về phía Bến cảng giao thoa; nên hỏi nhân viên gần nhất hỗ trợ."
+      },
+      "source_type": "mock_for_prototype",
+      "mock_note": "Dữ liệu dùng cho prototype; khoảng cách/trạng thái/chờ là giả lập."
+    },
+    {
+      "id": "medical_002",
+      "name": "Điểm sơ cứu Thế giới nước",
+      "category": "medical",
+      "zone": "Thế giới nước",
+      "tags": [
+        "medical",
+        "first_aid",
+        "urgent",
+        "water_world",
+        "staff_support"
+      ],
+      "status": "open",
+      "crowd_level": "low",
+      "estimated_wait_minutes": 0,
+      "suitable_for": [
+        "emergency",
+        "minor_injury",
+        "water_world"
+      ],
+      "description": "Điểm sơ cứu giả lập gần công viên nước.",
+      "distance_from_zone_meters": {
+        "Thế giới nước": 110,
+        "Bến cảng giao thoa": 720,
+        "Khu trò chơi trong nhà": 620,
+        "Vùng đất phiêu lưu": 820,
+        "River Safari": 930,
+        "Đảo Văn hóa Dân gian": 1080
+      },
+      "direction_hint_from_zone": {
+        "Thế giới nước": "Từ khu hồ sóng, đi về phía khu nhân viên/cứu hộ và hỏi trạm sơ cứu."
+      },
+      "source_type": "mock_for_prototype",
+      "mock_note": "Dữ liệu dùng cho prototype; khoảng cách/trạng thái/chờ là giả lập."
+    },
+    {
+      "id": "rest_001",
+      "name": "Điểm nghỉ chân Quảng trường trung tâm",
+      "category": "rest_area",
+      "zone": "Bến cảng giao thoa",
+      "tags": [
+        "rest_area",
+        "shade",
+        "family",
+        "elderly",
+        "near_entrance"
+      ],
+      "status": "open",
+      "crowd_level": "medium",
+      "estimated_wait_minutes": 0,
+      "suitable_for": [
+        "family_rest",
+        "elderly",
+        "waiting_point"
+      ],
+      "description": "Khu nghỉ chân giả lập gần quảng trường.",
+      "distance_from_zone_meters": {
+        "Bến cảng giao thoa": 70,
+        "Khu trò chơi trong nhà": 260,
+        "Vùng đất phiêu lưu": 500,
+        "Thế giới nước": 680,
+        "Đảo Văn hóa Dân gian": 820,
+        "River Safari": 1120
+      },
+      "direction_hint_from_zone": {
+        "Bến cảng giao thoa": "Nằm quanh quảng trường trung tâm, gần các hàng ghế nghỉ."
+      },
+      "source_type": "mock_for_prototype",
+      "mock_note": "Dữ liệu dùng cho prototype; khoảng cách/trạng thái/chờ là giả lập."
+    },
+    {
+      "id": "rest_002",
+      "name": "Điểm nghỉ mát gần River Safari",
+      "category": "rest_area",
+      "zone": "River Safari",
+      "tags": [
+        "rest_area",
+        "shade",
+        "nature_view",
+        "family",
+        "quiet",
+        "far_but_suitable"
+      ],
+      "status": "open",
+      "crowd_level": "low",
+      "estimated_wait_minutes": 0,
+      "suitable_for": [
+        "family_rest",
+        "quiet_break",
+        "after_safari"
+      ],
+      "description": "Điểm nghỉ giả lập gần River Safari, phù hợp nhóm gia đình cần nghỉ ở khu xa trung tâm.",
+      "distance_from_zone_meters": {
+        "River Safari": 180,
+        "Đảo Văn hóa Dân gian": 740,
+        "Thế giới nước": 840,
+        "Vùng đất phiêu lưu": 980,
+        "Bến cảng giao thoa": 1200,
+        "Khu trò chơi trong nhà": 1120
+      },
+      "direction_hint_from_zone": {
+        "River Safari": "Sau khi rời bến thuyền River Safari, đi theo lối ven sông tới cụm ghế nghỉ có bóng mát."
+      },
+      "source_type": "mock_for_prototype",
+      "mock_note": "Dữ liệu dùng cho prototype; khoảng cách/trạng thái/chờ là giả lập."
+    },
+    {
+      "id": "kids_001",
+      "name": "Khu trò chơi trong nhà",
+      "category": "kids_activity",
+      "zone": "Khu trò chơi trong nhà",
+      "tags": [
+        "kids",
+        "indoor",
+        "air_conditioner",
+        "rainy_day",
+        "hot_weather",
+        "family"
+      ],
+      "status": "open",
+      "crowd_level": "medium",
+      "estimated_wait_minutes": 5,
+      "suitable_for": [
+        "children",
+        "hot_weather",
+        "rainy_day",
+        "family"
+      ],
+      "description": "Khu trò chơi trong nhà phù hợp cho trẻ em, đặc biệt khi trời nắng gắt hoặc mưa.",
+      "distance_from_zone_meters": {
+        "Khu trò chơi trong nhà": 60,
+        "Bến cảng giao thoa": 280,
+        "Vùng đất phiêu lưu": 400,
+        "Thế giới nước": 620,
+        "Đảo Văn hóa Dân gian": 760,
+        "River Safari": 1080
+      },
+      "direction_hint_from_zone": {
+        "Bến cảng giao thoa": "Từ quảng trường, đi theo biển chỉ dẫn khu trò chơi trong nhà."
+      },
+      "source_type": "official_zone_mock_attributes",
+      "mock_note": "Dữ liệu dùng cho prototype; khoảng cách/trạng thái/chờ là giả lập."
+    },
+    {
+      "id": "kids_002",
+      "name": "Khu vui chơi trẻ em Thế giới nước",
+      "category": "kids_activity",
+      "zone": "Thế giới nước",
+      "tags": [
+        "kids",
+        "water_play",
+        "family",
+        "outdoor",
+        "cooling"
+      ],
+      "status": "open",
+      "crowd_level": "high",
+      "estimated_wait_minutes": 12,
+      "suitable_for": [
+        "children",
+        "water_play",
+        "hot_weather"
+      ],
+      "description": "Khu vui chơi nước giả lập dành cho trẻ em trong Thế giới nước, mát nhưng thường đông.",
+      "distance_from_zone_meters": {
+        "Thế giới nước": 120,
+        "Bến cảng giao thoa": 740,
+        "Khu trò chơi trong nhà": 640,
+        "Vùng đất phiêu lưu": 820,
+        "River Safari": 900,
+        "Đảo Văn hóa Dân gian": 1060
+      },
+      "direction_hint_from_zone": {
+        "Thế giới nước": "Đi từ hồ sóng về phía khu trẻ em, theo biển Kids Water Play."
+      },
+      "source_type": "mock_for_prototype",
+      "mock_note": "Dữ liệu dùng cho prototype; khoảng cách/trạng thái/chờ là giả lập."
+    },
+    {
+      "id": "activity_001",
+      "name": "River Safari",
+      "category": "attraction",
+      "zone": "River Safari",
+      "tags": [
+        "animals",
+        "boat_trip",
+        "family",
+        "kids",
+        "nature",
+        "far_but_suitable"
+      ],
+      "status": "open",
+      "crowd_level": "medium",
+      "estimated_wait_minutes": 14,
+      "suitable_for": [
+        "family_with_children",
+        "animal_lovers",
+        "afternoon_plan"
+      ],
+      "description": "Trải nghiệm du khảo trên sông, phù hợp gia đình có trẻ em nhưng thường cách xa khu cổng vào.",
+      "distance_from_zone_meters": {
+        "River Safari": 100,
+        "Thế giới nước": 850,
+        "Đảo Văn hóa Dân gian": 760,
+        "Vùng đất phiêu lưu": 980,
+        "Khu trò chơi trong nhà": 1120,
+        "Bến cảng giao thoa": 1250
+      },
+      "direction_hint_from_zone": {
+        "Bến cảng giao thoa": "Đi theo trục chính hướng về River Safari; vì khá xa, nên cân nhắc đi buggy nếu có."
+      },
+      "source_type": "official_zone_mock_attributes",
+      "mock_note": "Dữ liệu dùng cho prototype; khoảng cách/trạng thái/chờ là giả lập."
+    },
+    {
+      "id": "activity_002",
+      "name": "Vùng đất phiêu lưu",
+      "category": "attraction",
+      "zone": "Vùng đất phiêu lưu",
+      "tags": [
+        "thrill_ride",
+        "adult",
+        "teen",
+        "outdoor",
+        "crowded"
+      ],
+      "status": "open",
+      "crowd_level": "high",
+      "estimated_wait_minutes": 22,
+      "suitable_for": [
+        "teenagers",
+        "adults",
+        "thrill_seekers"
+      ],
+      "description": "Khu trò chơi cảm giác mạnh, phù hợp thanh thiếu niên/người lớn hơn là gia đình có trẻ nhỏ.",
+      "distance_from_zone_meters": {
+        "Vùng đất phiêu lưu": 80,
+        "Khu trò chơi trong nhà": 420,
+        "Bến cảng giao thoa": 560,
+        "Đảo Văn hóa Dân gian": 520,
+        "Thế giới nước": 820,
+        "River Safari": 980
+      },
+      "direction_hint_from_zone": {
+        "Bến cảng giao thoa": "Đi theo trục chính qua khu trò chơi trong nhà về phía Vùng đất phiêu lưu."
+      },
+      "source_type": "official_zone_mock_attributes",
+      "mock_note": "Dữ liệu dùng cho prototype; khoảng cách/trạng thái/chờ là giả lập."
+    },
+    {
+      "id": "activity_003",
+      "name": "Đảo Văn hóa Dân gian",
+      "category": "attraction",
+      "zone": "Đảo Văn hóa Dân gian",
+      "tags": [
+        "culture",
+        "craft_village",
+        "family",
+        "elderly",
+        "show",
+        "far_but_suitable"
+      ],
+      "status": "open",
+      "crowd_level": "medium",
+      "estimated_wait_minutes": 8,
+      "suitable_for": [
+        "family",
+        "elderly",
+        "culture_experience"
+      ],
+      "description": "Khu văn hóa/làng nghề, phù hợp gia đình muốn trải nghiệm nhẹ nhàng thay vì trò cảm giác mạnh.",
+      "distance_from_zone_meters": {
+        "Đảo Văn hóa Dân gian": 120,
+        "Vùng đất phiêu lưu": 540,
+        "River Safari": 760,
+        "Khu trò chơi trong nhà": 760,
+        "Bến cảng giao thoa": 880,
+        "Thế giới nước": 1080
+      },
+      "direction_hint_from_zone": {
+        "Bến cảng giao thoa": "Đi theo trục chính qua khu cầu/lối ven sông để tới Đảo Văn hóa Dân gian."
+      },
+      "source_type": "official_zone_mock_attributes",
+      "mock_note": "Dữ liệu dùng cho prototype; khoảng cách/trạng thái/chờ là giả lập."
+    },
+    {
+      "id": "closed_001",
+      "name": "Quầy kem River Safari",
+      "category": "drink",
+      "zone": "River Safari",
+      "tags": [
+        "ice_cream",
+        "kids",
+        "drink",
+        "near_river_safari",
+        "closed"
+      ],
+      "status": "closed",
+      "crowd_level": "unknown",
+      "estimated_wait_minutes": null,
+      "suitable_for": [
+        "children",
+        "snack_break"
+      ],
+      "description": "Quầy kem giả lập đang đóng cửa để test rule không gợi ý điểm closed.",
+      "distance_from_zone_meters": {
+        "River Safari": 150,
+        "Đảo Văn hóa Dân gian": 720,
+        "Thế giới nước": 850,
+        "Vùng đất phiêu lưu": 990,
+        "Khu trò chơi trong nhà": 1130,
+        "Bến cảng giao thoa": 1230
+      },
+      "direction_hint_from_zone": {
+        "River Safari": "Quầy nằm gần lối ra River Safari nhưng hiện đang đóng cửa trong dữ liệu mock."
+      },
+      "source_type": "mock_for_prototype",
+      "mock_note": "Dữ liệu dùng cho prototype; khoảng cách/trạng thái/chờ là giả lập."
+    },
+    {
+      "id": "closed_002",
+      "name": "Điểm nghỉ chân Adventure Shade",
+      "category": "rest_area",
+      "zone": "Vùng đất phiêu lưu",
+      "tags": [
+        "rest_area",
+        "shade",
+        "closed",
+        "maintenance"
+      ],
+      "status": "closed",
+      "crowd_level": "unknown",
+      "estimated_wait_minutes": null,
+      "suitable_for": [
+        "family_rest"
+      ],
+      "description": "Điểm nghỉ giả lập tạm đóng để bảo trì, dùng kiểm thử không chọn điểm đóng cửa.",
+      "distance_from_zone_meters": {
+        "Vùng đất phiêu lưu": 110,
+        "Khu trò chơi trong nhà": 450,
+        "Đảo Văn hóa Dân gian": 520,
+        "Bến cảng giao thoa": 590,
+        "Thế giới nước": 830,
+        "River Safari": 970
+      },
+      "direction_hint_from_zone": {
+        "Vùng đất phiêu lưu": "Điểm này đang bảo trì, không nên điều hướng khách tới."
+      },
+      "source_type": "mock_for_prototype",
+      "mock_note": "Dữ liệu dùng cho prototype; khoảng cách/trạng thái/chờ là giả lập."
+    }
+  ]
+}
