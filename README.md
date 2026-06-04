@@ -3,15 +3,16 @@
 Prototype demo cho track **Travel & Hospitality**. Sản phẩm là trợ lý AI giúp phụ huynh trong **VinWonders Nam Hội An** tìm nhanh nhà hàng, y tế, shuttle hoặc tiện ích dựa trên dữ liệu công khai.
 
 ## Thành viên
+## Team Members & Responsibilities
 
-> Nhóm điền mã học viên + họ tên trước khi nộp LMS.
-
-| Vai trò demo | Thành viên | Phụ trách |
-|---|---|---|
-| Member 1 | TBD | UX research, evidence pack, problem framing |
-| Member 2 | TBD | Mock database, test cases |
-| Member 3 | TBD | Backend FastAPI, AI/rule routing |
-| Member 4 | TBD | Streamlit UI, demo script |
+| Thành viên        | Mã học viên | Vai trò                                          |
+|-------------------|-------------|--------------------------------------------------------------|
+| Nguyễn Hải Quân   | 2A202600660 | UX Research, Evidence Pack, Problem Framing, AI/Rule Routing |
+| Đỗ Đức Tuệ        | 2A202600900 | Mock Database                                                |
+| Hoàng Trọng Vĩnh  | 2A202600566 | Backend FastAPI, Test Cases                                  |
+| Dương Thế Linh    | 2A202600914 | Testing, Merge Code                                          |
+| Nguyễn Thái Dương | 2A202600547 | Streamlit UI                                                 |
+| Trần Quang Thạnh  | 2A202600620 | Demo Script                                                  |
 
 ## Product Scope
 
